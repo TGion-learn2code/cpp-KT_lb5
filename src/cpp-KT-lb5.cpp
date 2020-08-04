@@ -17,11 +17,11 @@ using namespace std;
 void type_print (string var_name, auto *var) {
 
 	cout	<< setw(18)						// Set width of column to 20
-				<< var_name					// Print var_name (string)
-				<< setw(17)
-				<< "typeid.name: "
-			<< setw (2)
-			<< typeid(*var).name()			// Pointer to auto *var, print typeid.name (e.g. i for integer)
+		<< var_name					// Print var_name (string)
+		<< setw(17)
+		<< "typeid.name: "
+		<< setw (2)
+		<< typeid(*var).name()			// Pointer to auto *var, print typeid.name (e.g. i for integer)
 		 	 	 	 	 	 	 	 	 	// WARNING: Does not have to work at all. The output is implementation-defined
 		 	 	 	 	 	 	 	 	 	// and does not have to output anything at all. Here it works, of some sort
 			<< setw(12)
